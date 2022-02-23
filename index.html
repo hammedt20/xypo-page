@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>website design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="style.css"></script> -->
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav class="horizontal-nav">
+                <img src="/images/logo.png" alt="" class="logo">
+                <ul class="nav-links">
+                    <li class="link"><a href="#">home</a></li>
+                    <li class="link"><a href="#">about</a></li>
+                    <li class="link"><a href="#">features</a></li>
+                    <li class="link"><a href="#">courses</a></li>
+                    <li class="link"><a href="#">contact</a></li>
+                </ul>
+                <span class="hamburger"><img src="/images/menu.png" alt=""></span>
+            </nav>
+            <div class="header-text">
+                <h1>The purpose is to<br>teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in same form, by injected humor, or randomised words which don't look even slightly believable.</p>
+                <button class="btn">Read more</button>
+                <div class="line">
+                    <div class="line-1"></div> <br>
+                    <div class="line-2"></div> <br>
+                    <div class="line-3"></div>   
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="about">
+        <div class="left-col">
+            <img src="/images/about.png" alt="">
+        </div>
+        <div class="right-col">
+            <div class="about-text">
+                <h1>about us</h1>
+                <span class="square"></span>
+
+                <p>contrary to popular belief, lorem ipsum is not simply random text. it has roots in a place of classical latin literature from 45 BC, making it over 2000 years old. richard McClintock, a latin professor at Hampden-Sydney college in varginia, looked up one of the more obscure latin words, consectetur, from a lorem ipsum passage, and going through the cities of the word in classical literature, discovered the undoubtable source.</p> <br><br>
+                
+                <div class="line">
+                    <div class="line-1"></div> <br>
+                    <div class="line-2"></div> <br>
+                    <div class="line-3"></div>   
+                </div>
+
+                <h2>"learning is not attained by chance, it must be sought for with ardor and attended to with diligence"</h2>
+                <h3>----abigail adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="/images/pic-1.png" alt="">
+                <h4>learn anywhere</h4>
+                <p>switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="/images/pic-2.png" alt="">
+                <h4>expert teachers</h4>
+                <p>learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="/images/pic-3.png" alt="">
+                <h4>unlimited access</h4>
+                <p>choose what you would like to learn from our extensive subscription library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                    <div class="line-1"></div> <br>
+                    <div class="line-2"></div> <br>
+                    <div class="line-3"></div>   
+            </div>
+            <button class="btn">start free trial</button>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>browse our top <br> courses</h1>
+                    <span class="square"></span>
+                    <p>contrary to popular belief, lorem ipsum is not simply random text. it has roots in a place of classical latin literature from 45 BC, making it over 2000 years old. richard McClintock, a latin professor at Hampden</p>
+                    <button class="btn">view all courses</button>
+                    <div class="line">
+                            <div class="line-1"></div> <br>
+                            <div class="line-2"></div> <br>
+                            <div class="line-3"></div>   
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="/images/course.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="offer">
+            <div class="left-col">
+                <img src="/images/offer.png" alt="">
+            </div>
+            <div class="right-col">
+                <div class="about-text">
+                    <h1>limitless learning <br> limitless possibilities</h1>
+                    <span class="square"></span>
+    
+                    <p>contrary to popular belief, lorem ipsum is not simply random text. it has roots in a place of classical latin literature from 45 BC, making it over 2000 years old. richard McClintock, a latin professor at Hampden-Sydney college in varginia</p> 
+                    <button class="btn">start free trial</button>
+                    <div class="line">
+                        <div class="line-1"></div> <br>
+                        <div class="line-2"></div> <br>
+                        <div class="line-3"></div>   
+                    </div>
+    
+                   
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>sign up to join our <br>learning community</h1>
+                <form action="">
+                    <input type="text" placeholder="enter name">
+                    <input type="email" placeholder="enter email">
+                    <input type="password" placeholder="enter password">
+                    <div class="btn-box">
+                        <button class="btn">sign up</button>
+                        <button class="btn">start free trial</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right-col">
+                <img src="/images/contact.png" alt="">
+            </div>
+        </div>
+    </section>
+
+<script>
+    const menuBtn = document.querySelector(".hamburger"),
+        navLink = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+        navLink.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
