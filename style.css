@@ -11,6 +11,7 @@
     --pink: #f67c92;
     --black: #777;
     --white: #fff;
+    --light-pink: #fab3c4;
 }
 
 html{
@@ -30,6 +31,10 @@ html{
     letter-spacing: .3rem;
 }
 
+h1{
+    font-size: 3.4rem;
+}
+
 #header{
     height: 100vh;
     background-image: url('/images/background.png');
@@ -39,6 +44,10 @@ html{
 
 .container{
     margin: 0 10rem;
+}
+
+.logo{
+    width: 10rem;
 }
 
 .container .horizontal-nav{
@@ -147,16 +156,14 @@ p{
 .right-col{
     flex-basis: 50%;
     text-align:right;
+    /* margin: 0 10rem; */
+    /* border: 2px solid var(--pink); */
 }
 
 .about-text{
     max-width: 50rem;
     margin-right: 10rem;
     display: inline-block;
-}
-
-.about-text h1{
-    font-size: 3.4rem;
 }
 
 .about-text h2{
@@ -267,6 +274,7 @@ p{
 #contact h1{
     font-size: 3.4rem;
 }
+
 form{
     max-width: 35rem;
     margin: 3rem 0;
@@ -278,7 +286,7 @@ form input{
     margin-bottom: .5rem;
     outline: none;
     box-shadow: none;
-    border: 2px solid #fab3c4;
+    border: 2px solid var(--light-pink);
 }
 
 .btn-box{
@@ -292,6 +300,85 @@ form input{
     padding: 1.8rem 0;
 }
 
+#footer{
+    padding: 5rem 0 3rem;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--pink);
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-row .footer-left-col{
+    flex-basis: 50%;
+    margin-top: 6rem;
+}
+
+.footer-row .footer-left-col .footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-row .footer-left-col .footer-links .link-title h4{
+    color: var(--light-pink);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.footer-row .footer-left-col .footer-links .link-title small,small{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.footer-row .footer-right-col{
+    flex-basis: 35%;
+}
+
+.footer-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 10rem;
+}
+
+.footer-logo button{
+    padding: 1.2rem 3.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.copyright-text,.footer-logo{
+    flex-basis: 40%;
+}
+
+.social-icons{
+    width: 5rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img{
+    display: block;
+    width: 2rem;
+    margin: 0 auto 2rem;
+    cursor: pointer;
+}
 
 
 
@@ -301,14 +388,16 @@ form input{
 
 @media (max-width: 991px){
 
-    html{
-        font-size: 55%;
-    }
+    /* html{
+        font-size: 50%;
+    } */
 
     .container .horizontal-nav .hamburger{
         display: block;
         z-index: 2;
-        /* position: fixed; */
+        position: fixed;
+        right: 5rem;
+        transform: translateY(50%);
     }
 
     .nav-links{
@@ -338,12 +427,95 @@ form input{
         color: var(--black);
     }
 
+    #header{
+        background-image: none;
+    }
+
+    .container{
+        margin: 0 5rem;
+    }
+
+    .logo{
+        width: 7rem;
+        margin-top: 2.7rem;
+    }
+
+    .header-text{
+        margin-top: 10rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .btn{
+        padding: 1rem 1.6rem;  
+    }
+
+    .social-icons img{
+        width: 1.4rem;
+        margin: 1.5rem auto;
+    }
+
+    .left-col, .right-col{
+        flex-basis: 100%;
+        /* border: 1px solid var(--black); */
+    }
+
+    .right-col{
+        margin-left: 5rem;
+    }
+
+    #about .about-text{
+        margin-right: 5rem 0 0;
+        display: inline-block;
+        /* border: 1px solid var(--black); */
+    }
+    
+    .about-text h2{
+        font-size: 1.8rem;
+    }
+
+    .feature-col{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .course-left-col{
+        flex-basis: 100%;
+    }
+
+    .course-right-col{
+        flex-basis: 100%;
+        margin-top: 7rem;
+    }
+
+    .contact-left-col,.contact-right-col{
+        flex-basis: 100%;
+    }
+
+    .contact-left-col{
+        margin-bottom: 5rem;
+    }
+
+    .footer-row .footer-left-col,.footer-right-col{
+        flex-basis: 100%;
+        /* margin-bottom: 3rem; */
+    }
+
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 3rem;
+    }
+
+
+
 }
 
 @media (max-width: 450px){
 
-    html{
-        font-size: 50%;
-    }
+    /* html{
+        font-size: 45%;
+    } */
 
 }
